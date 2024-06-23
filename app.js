@@ -7,20 +7,16 @@
                 const email = document.getElementById('email').value;
              
 
-                console.log('Name:', name);
-                console.log('Email:', email);
-                
+                // console.log('Name:', name);
+                // console.log('Email:', email);
+                // objects data store koralm
                 const result ={name, email}
+        
                 console.log(result)
 
-                // Now you can use these values as needed, for example, send them via AJAX
-                // const formData = new FormData();
-   
-                // formData.append('name', name);
-                // formData.append('email', email);
-                // console.log(formData,"form data add")
+               
 
-                fetch('http://localhost:5000/subscribe', {
+                fetch('https://subscription-service-eight.vercel.app/subscribe', {
                     method: "POST", // or 'PUT'
                     headers: {
                       "Content-Type": "application/json",
