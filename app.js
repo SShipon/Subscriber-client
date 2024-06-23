@@ -3,23 +3,30 @@
                 event.preventDefault(); // Prevent the default form submission
 
                 // Get the input values
-                var name = document.getElementById('name').value;
-                var email = document.getElementById('email').value;
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
              
 
                 console.log('Name:', name);
                 console.log('Email:', email);
-            
+                
+                const result ={name, email}
+                console.log(result)
 
                 // Now you can use these values as needed, for example, send them via AJAX
-                var formData = new FormData();
-                formData.append('name', name);
-                formData.append('email', email);
-             
+                // const formData = new FormData();
+   
+                // formData.append('name', name);
+                // formData.append('email', email);
+                // console.log(formData,"form data add")
 
                 fetch('http://localhost:5000/subscribe', {
-                    method: 'POST',
-                    body: formData
+                    method: "POST", // or 'PUT'
+                    headers: {
+                      "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(result),
+                    
                 })
                 .then(response => {
                     if (!response.ok) {
