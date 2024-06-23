@@ -384,7 +384,8 @@ select {
 }
 
 .contact input[type="text"],
-.contact input[type="email"] {
+.contact input[type="email"],
+.contact input[type="password"] {
     display: block;
     margin-bottom: 25px;
     padding: 18px 35px;

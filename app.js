@@ -5,17 +5,17 @@
                 // Get the input values
                 var name = document.getElementById('name').value;
                 var email = document.getElementById('email').value;
-                var password = document.getElementById('password').value;
+             
 
                 console.log('Name:', name);
                 console.log('Email:', email);
-                console.log('Password:', password);
+            
 
                 // Now you can use these values as needed, for example, send them via AJAX
                 var formData = new FormData();
                 formData.append('name', name);
                 formData.append('email', email);
-                formData.append('password', password);
+             
 
                 fetch('http://localhost:5000/subscribe', {
                     method: 'POST',
@@ -29,7 +29,7 @@
                 })
                 .then(data => {
                     if (data.status === 'success') {
-                        alert('Subscription successful');
+                        alert('Subscription added database successful');
                         document.getElementById('subscribe-form').reset(); // Reset the form
                     } else {
                         alert('Subscription failed: ' + data.message);
