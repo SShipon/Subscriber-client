@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+}
+
+
+/* shared styles */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.paragraph {
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.paragraph-center {
+    color: #5A5A5D;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.section-title {
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.section-title-center {
+    text-align: center;
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.card-title {
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+    padding: 25px 0 15px 0;
+}
+
+.common-btn {
+    border-radius: 5px;
+    background-color: rgb(238, 109, 61);
+    border: 0;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 13px 35px;
+}
+
+
+/* Navber styles */
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+}
+
+nav .nav-content {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    gap: 10px;
+}
+
+nav .nav-item {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+nav .nav-item ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+nav .nav-item li {
+    list-style: none;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+/* banner section */
+
+.banner {
+    background: linear-gradient(180deg, #444444 0%, rgba(7, 2, 17, 0)100%), url('../Images/Group\ 13\ \(1\)\ \(1\).png');
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+    border-radius: 8px;
+}
+
+.banner-content {
+    text-align: center;
+    padding-top: 120px;
+}
+
+.banner-text .banner-title {
+    color: #FFF;
+    font-size: 64px;
+    font-weight: 800;
+}
+
+.banner-text p {
+    color: #FFF;
+    max-width: 676px;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+
+.banner-input {
+    padding: 20px 0;
+    display: flex;
+    gap: 15px;
+    max-width: 760px;
+    margin: 0 auto;
+    justify-content: center;
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.428);
+}
+
+.banner-input input,
+select {
+    text-align: center;
+    padding: 13px 0;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 170px;
+    border: none;
+}
+
+
+/* popular section */
+
+.popular {
+    display: flex;
+    gap: 50px;
+    padding-top: 60px;
+}
+
+.popular * {
+    margin-bottom: 20px;
+}
+
+.popular .popular-text {
+    padding: 20px;
+}
+
+.popular .popular-text ul {
+    padding-left: 20px;
+}
+
+.popular .popular-img img {
+    width: 550px;
+}
+
+
+/* Destination section */
+
+.destination-text,
+.choose-text,
+.discount-text {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.destination-text p,
+.choose-text p,
+.discount-text p {
+    padding: 15px 0 40px 0;
+}
+
+.destination-content .img {
+    position: relative;
+}
+
+.destination-content .row-1 .title {
+    position: absolute;
+    top: 120px;
+    right: 40%;
+}
+
+.destination-content .row-2 .title {
+    position: absolute;
+    top: 120px;
+    right: 30%;
+}
+
+.destination-content .row-3 .title {
+    position: absolute;
+    top: 120px;
+    right: 35%;
+}
+
+.destination-content .row-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.destination-content .row-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.destination-content .row-3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.destination-content h2 {
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+
+/* Choose section */
+
+.choose-content .card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.choose-content .card-1,
+.card-3 {
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+    padding: 20px 30px;
+}
+
+.choose-content .card-2 {
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+    padding: 25px;
+}
+
+.choose-content .card-3 {
+    max-width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.choose-content .fa-solid {
+    font-size: 45px;
+}
+
+
+/* Discount Section */
+
+.discount-content .discount-item-1 {
+    background-image: url(../Images/Group\ 39.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    border-radius: 8px;
+}
+
+.discount-content {
+    display: grid;
+    gap: 20px;
+}
+
+.discount-item-content-1 {
+    width: 40%;
+    height: 70%;
+    flex-shrink: 0;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.428);
+    margin-right: 50px;
+}
+
+.discount-item-content-text {
+    padding: 40px;
+}
+
+.discount-item-2 {
+    background-image: url(../Images/Group\ 40.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.discount-item-content-2 {
+    width: 40%;
+    height: 70%;
+    flex-shrink: 0;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.428);
+    margin-left: 50px;
+}
+
+.discount-content .information {
+    display: flex;
+    gap: 20px;
+}
+
+.discount-content .information * {
+    color: #FF5400;
+}
+
+.special-btn {
+    padding: 30px 0;
+    text-align: center;
+}
+
+
+/* Perfect place section */
+
+.perfect-place {
+    display: flex;
+    gap: 50px;
+}
+
+.perfect-place .perfect-place-text {
+    padding: 20px;
+}
+
+.perfect-place .perfect-place-text * {
+    padding: 10px;
+}
+
+.perfect-place .perfect-place-text ul {
+    padding-left: 20px;
+}
+
+
+/* Subscribe section */
+
+.subscribe {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.subscribe-from {
+    width: 474px;
+    height: 422px;
+    flex-shrink: 0;
+    border: 2px solid #FF5400;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.contact input[type="text"],
+.contact input[type="email"] {
+    display: block;
+    margin-bottom: 25px;
+    padding: 18px 35px;
+    color: #757575;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    background: rgba(19, 19, 24, 0.05);
+    border: 0;
+}
+
+.subscribe-from .common-btn {
+    width: 100%;
+}
+
+.subscribe-from hr {
+    margin: 30px 0;
+}
+
+.subscribe-content {
+    position: relative;
+}
+
+.subscribe-content .badge {
+    background-color: #FF5400;
+    border-radius: 16px;
+    width: 310px;
+    height: 100px;
+    transform: rotate(-19.628deg);
+    flex-shrink: 0;
+    text-align: center;
+    padding-top: 20px;
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+}
+
+
+/* Footer styles */
+
+footer {
+    background: rgba(19, 19, 24, 0.05);
+    padding: 60px 10px;
+}
+
+.footer-content,
+.social-link {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-text {
+    max-width: 75%;
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+.fa-brands {
+    font-size: 40px;
+}
+
+hr {
+    margin: 50px 0;
+}
+
+#choose,
+#discount,
+#subscription {
+    padding-top: 30px;
+}
